@@ -1,0 +1,116 @@
+.headerBox {
+   display: table;
+   width: 100%;
+}
+.headerBox .container1 {
+    display: table-cell;
+    width: 15%;
+    vertical-align: middle;
+}
+.headerBox .container2 {
+    display: table-cell;
+    width: 60%;
+    vertical-align: middle;
+}
+.headerBox .container3{
+    display: table-cell;
+    width: 25%;
+    vertical-align: middle;
+}
+.backButton {
+    padding-left: 40px;
+    font-size: 18px;
+    color: lightgreen;
+    cursor: pointer;
+
+}
+.logo {
+    text-align: right;
+}
+
+.list{
+    display: table;
+    margin: auto;
+}
+.list .contain {
+    display: table-cell;
+    padding: 15px;
+    font-size: 16px;
+    color: darkslategrey;
+    font-weight: bold;
+    cursor: pointer;
+    
+}
+.list .contain:hover {
+    color: yellowgreen;
+}
+.list .contain:focus {
+    outline: none;
+}
+
+.list .active {
+    color: blue;
+    outline: none;
+}
+
+.loginRow{
+    text-align: end;
+}
+.signinButton {
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    background-color: blue ;
+    border-radius: 100px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.signinButton:focus{
+   outline: none;
+}
+.signinButton:hover{
+    background-color: yellowgreen;
+}
+.logoutButton{
+    width: 90px;
+    height: 30px;
+    font-size: 15px;
+    border: none;
+    color: yellowgreen;
+    cursor: pointer;
+    
+}
+.logoutButton:hover{
+    color: cornflowerblue;
+    cursor: pointer;
+}
+.logoutButton:focus{
+    outline: none;
+}
+.user {
+    color: blue;
+    font-weight: lighter; 
+}
+.cart {
+    border-radius: 50px;
+    position: absolute;
+    color: red;
+    padding: 1px 5px 1px 5px;
+    border-radius: 50px;
+    background-color: white;
+    cursor: pointer;
+    left: 28px;
+    top: -15px;
+    border: 1px solid red;
+    
+}
+.cartText {
+    margin-right: 20px;
+    cursor: pointer;
+    color: blue;
+    position: relative;
+    padding: 5px;
+    
+}

@@ -1,0 +1,33 @@
+<div class="headerBox">
+    <div class="container1 logo">
+        <img src="https://www.arabianbusiness.com/sites/default/files/styles/full_img/public/images/2017/01/17/apple-logo-rainbow.jpg" width="65" height="45">
+    </div>
+
+    <ng-container>
+        <div class="container2" *ngIf="backEnable.url === ''">
+            <ul class="list">
+                <li class="contain" [routerLink]="['/home']" routerLinkActive="active">Home</li>
+                <li class="contain" [routerLink]="['/gallery']" routerLinkActive="active">Gallery</li>
+                <li class="contain" [routerLink]="['/products']" routerLinkActive="active">Products</li>
+                <li class="contain" [routerLink]="['/contact-us']" routerLinkActive="active">Contact Us</li>
+            </ul>
+        </div>
+        <div class="container2" *ngIf="backEnable.url !== ''">
+              <a class="backButton" [routerLink]="['/'+backEnable.url]"  >{{backEnable.text}}</a>
+        </div>
+    </ng-container>
+    <div class="container3">
+        <ng-container *ngIf="!loggedIn.name && !contactEnable">
+            <button class="signinButton" (click)="login()">Sign In</button>
+        </ng-container>
+        <ng-container *ngIf="loggedIn.name && !contactEnable">
+            <span class="cartText">Cart <span class="cart">{{cartCount}}</span></span>
+            <span class="user">Welcome, {{loggedIn.name}} &nbsp;&nbsp; |<button class="logoutButton"
+                    (click)="logout()">Logout</button></span>
+
+        </ng-container>
+        <ng-container *ngIf="contactEnable">
+            <h3 class="user">Mob: +91-9039907701</h3>
+        </ng-container>
+    </div>
+</div>
